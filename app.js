@@ -1,8 +1,6 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 
-//Criando variaveis necessarias
-
-let listaDeAmigos = []; // Lista de amigos para armazenar
+let listaDeAmigos = []; 
 let escolha;
 let lista;
 
@@ -24,24 +22,7 @@ function adicionarAmigo(){
     }
     else{
         
-        function adicao(adicao){
-
-            if(!listaDeAmigos.includes()){ 
-
-                listaDeAmigos.push(amigo);
-            }
-
-            let exibirLista = document.querySelector('ul');
-            exibirLista.innerHTML = "";
-
-
-            listaDeAmigos.forEach(function (listaAmigos){
-
-                exibirLista.innerHTML += `<li>${listaAmigos}<li>`;
-
-            });
-
-        }
+        
         adicao();
         
 
@@ -53,6 +34,28 @@ function adicionarAmigo(){
 
 }
 
+function adicao(adicao){
+
+    let lista = document.querySelector('ul');
+    lista.innerHTML = "";
+
+    if(!listaDeAmigos.includes()){
+
+        listaDeAmigos.push(amigo);
+    }
+    else{
+
+        console.log("Nome ja esta na lista");
+    }
+
+
+    listaDeAmigos.forEach(function (exibir) {
+
+        lista.innerHTML += `<li>${exibir}<li>`;
+        
+    });
+}
+
 function limparCampo(){
 
 
@@ -61,7 +64,6 @@ function limparCampo(){
 
 
 }
-
 
 
 
