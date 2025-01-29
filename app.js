@@ -24,32 +24,47 @@ function adicionarAmigo(){
     }
     else{
         
+        function adicao(adicao){
+
+            if(!listaDeAmigos.includes()){ 
+
+                listaDeAmigos.push(amigo);
+            }
+
+            let exibirLista = document.querySelector('ul');
+            exibirLista.innerHTML = "";
+
+
+            listaDeAmigos.forEach(function (listaAmigos){
+
+                exibirLista.innerHTML += `<li>${listaAmigos}<li>`;
+
+            });
+
+        }
+        adicao();
         
-        listaDeAmigos.push(amigo);
 
-
-        let exibirlista = document.querySelector('ul');
-
-        exibirlista.innerHTML += ('listaAmigos', `${listaDeAmigos[listaDeAmigos.length -1]}<br>`);
+        limparCampo();
               
-        
     }
 
 
 
 }
 
-function vizualizarResultado(){
+function limparCampo(){
 
 
-
-}
-
-function gerarAmigo(){
-
+    let limpar = document.querySelector('input');
+    limpar.value = "";
 
 
 }
+
+
+
+
 
 
 
