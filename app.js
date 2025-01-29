@@ -4,7 +4,7 @@
 
 let listaDeAmigos = []; // Lista de amigos para armazenar
 let escolha;
-let adicionarLista;
+let lista;
 
 function coleta(tag,texto){
 
@@ -19,19 +19,19 @@ function adicionarAmigo(){
 
     if(amigo == ""){
 
-        alert("Favor digitar um nome valido!");
+        alert("Por favor, insira um nome.");
         
     }
     else{
         
         
-        listaDeAmigos = amigo;
-        adicionarLista = listaDeAmigos;
+        listaDeAmigos.push(amigo);
+
 
         let exibirlista = document.querySelector('ul');
 
-        exibirlista.innerHTML += ('listaAmigos', `${adicionarLista}<br>`);
-        
+        exibirlista.innerHTML += ('listaAmigos', `${listaDeAmigos[listaDeAmigos.length -1]}<br>`);
+              
         
     }
 
