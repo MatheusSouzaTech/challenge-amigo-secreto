@@ -22,6 +22,27 @@ function adicionarAmigo(){
     }
     else{
         
+        function adicao(adicao){
+
+            let lista = document.querySelector('ul');
+            lista.innerHTML = "";
+        
+            if(!listaDeAmigos.includes()){
+        
+                listaDeAmigos.push(amigo);
+            }
+            else{
+        
+                console.log("Nome ja esta na lista");
+            }
+        
+        
+            listaDeAmigos.forEach(function (exibir) {
+        
+                lista.innerHTML += `<li>${exibir}<li>`;
+                
+            });
+        }
         
         adicao();
         
@@ -34,27 +55,16 @@ function adicionarAmigo(){
 
 }
 
-function adicao(adicao){
-
-    let lista = document.querySelector('ul');
-    lista.innerHTML = "";
-
-    if(!listaDeAmigos.includes()){
-
-        listaDeAmigos.push(amigo);
-    }
-    else{
-
-        console.log("Nome ja esta na lista");
-    }
+function sortearAmigo(){
+    
 
 
-    listaDeAmigos.forEach(function (exibir) {
 
-        lista.innerHTML += `<li>${exibir}<li>`;
-        
-    });
+
+
 }
+
+
 
 function limparCampo(){
 
