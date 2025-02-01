@@ -57,11 +57,10 @@ function adicionarAmigo(){
 
 function sortearAmigo(){
     
+    escolha = parseInt(Math.random() * listaDeAmigos.length);
 
-
-
-
-
+    
+    
 }
 
 
