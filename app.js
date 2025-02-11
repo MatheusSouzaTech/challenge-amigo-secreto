@@ -51,6 +51,8 @@ function adicionarAmigo(){
               
     }
 
+    
+
 
 
 }
@@ -59,7 +61,18 @@ function sortearAmigo(){
     
     escolha = parseInt(Math.random() * listaDeAmigos.length);
 
+    let amigoEscolhido = listaDeAmigos[escolha];
+
+    console.log(amigoEscolhido);
+
+
+    resultado = document.querySelector(".result-list");
+
+    resultado.innerHTML = `${amigoEscolhido}`;
+
     
+
+
     
 }
 
